@@ -5,7 +5,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- delete into void register and past : primagen
-vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("x", "<leader>dp", [["_dP]])
 
 -- make C-c behave like Esc
 vim.keymap.set("i", "<C-c>", "<Esc>")
@@ -16,8 +16,10 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 -- delete into void
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
-
+-- vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
+-- paste from system clipboard
+vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]])
+vim.keymap.set("n", "<leader>P", [["+P]])
 
 vim.keymap.set("n", "Q", "<nop>")
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")

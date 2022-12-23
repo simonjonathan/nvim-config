@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    loaded = true,
-    path = "/home/minidutche/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/minidutche/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -117,7 +112,12 @@ _G.packer_plugins = {
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/minidutche/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
-    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+    url = "https://github.com/vonheikemen/lsp-zero.nvim"
+  },
+  luasnip = {
+    loaded = true,
+    path = "/home/minidutche/.local/share/nvim/site/pack/packer/start/luasnip",
+    url = "https://github.com/l3mon4d3/luasnip"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -174,6 +174,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/minidutche/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "/home/minidutche/.local/share/nvim/site/pack/packer/start/vim-airline",
+    url = "https://github.com/vim-airline/vim-airline"
+  },
+  ["vim-airline-themes"] = {
+    loaded = true,
+    path = "/home/minidutche/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
+    url = "https://github.com/vim-airline/vim-airline-themes"
   },
   ["vim-fugitive"] = {
     loaded = true,
