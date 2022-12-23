@@ -46,8 +46,8 @@ return require('packer').startup(function(use)
 		}
 	}
 
-	use("folke/zen-mode.nvim")
+	use('folke/zen-mode.nvim')
 	--  use("github/copilot.vim")
-	use("vim-airline/vim-airline')
-	use("vim-airline/vim-airline-themes')
+	use('vim-airline/vim-airline')
+	use('vim-airline/vim-airline-themes')
 end)
