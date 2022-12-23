@@ -1,7 +1,3 @@
--- does not handle well with vscode - works well in actual nvim
-vim.keymap.set("v", "J", "<Cmd>call VSCodeNotify('editor.action.moveLinesDownAction')<CR>")
-vim.keymap.set("v", "K", "<Cmd>call VSCodeNotify('editor.action.moveLinesUpAction')<CR>")
-
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
