@@ -13,13 +13,13 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 
 -- next greatest remap ever : asbjornHaland
 -- copy into system clipboard
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
-vim.keymap.set("n", "<leader>Y", [["+Y]])
+-- vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+-- vim.keymap.set("n", "<leader>Y", [["+Y]])
 -- delete into void
 -- vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 -- paste from system clipboard
-vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]])
-vim.keymap.set("n", "<leader>P", [["+P]])
+-- vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]])
+-- vim.keymap.set("n", "<leader>P", [["+P]])
 
 vim.keymap.set("n", "Q", "<nop>")
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")

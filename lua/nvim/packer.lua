@@ -19,10 +19,24 @@ return require('packer').startup(function(use)
 		end
 	})
 	use({ 'nvim-treesitter/nvim-treesitter', run = ':tsupdate' })
-	use('nvim-treesitter/playground')
+	use { -- Additional text objects via treesitter
+    'nvim-treesitter/nvim-treesitter-textobjects',
+    after = 'nvim-treesitter',
+  }
+	-- use('nvim-treesitter/playground')
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
+
+	use { -- Autocompletion
+		'hrsh7th/nvim-cmp',
+		requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
+	}
+
+	use 'nvim-lualine/lualine.nvim' -- Fancier statusline
+	use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
+	use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
+	use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
 
 	use {
 		'vonheikemen/lsp-zero.nvim',
