@@ -1,11 +1,14 @@
 require("megadutche")
 
+prefix = ""
 if vim.fn.has('win32') then
-   local prefix = vim.env.HOME .. '/AppData/Local/nvim'
+   prefix = os.getenv("HOME") .. '/AppData/Local/nvim'
 else
-   local prefix = vim.env.HOME .. '/.config/nvim'
+   prefix = os.getenv("HOME") .. '/.config/nvim'
+   print(prefix)
 end
-
+print(os.getenv("HOME"))
+print(os.getenv("NVIMRC"))
 print(prefix)
 print(vim.fn.expand(prefix))
 print('source ' .. vim.fn.expand(prefix) .. '/theme.vim')
