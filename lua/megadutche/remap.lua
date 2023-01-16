@@ -32,3 +32,11 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- indent/format with tab
+vim.keymap.set("n", "<Tab>" ,">>_")
+vim.keymap.set("n", "<S-Tab>" ,"<<_")
+vim.keymap.set("i", "<S-Tab>" ,"<C-D>")
+vim.keymap.set("v", "<Tab>" ,">gv")
+vim.keymap.set("v", "<S-Tab>" ,"<gv")
+
