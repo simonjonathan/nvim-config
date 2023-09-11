@@ -1,6 +1,6 @@
 vim.opt.clipboard = vim.opt.clipboard + 'unnamedplus'
 
-vim.opt.guicursor = "n-v-c:block,i-ci-ve:block,r-cr:hor20,o:hor50"
+-- vim.opt.guicursor = "n-v-c:block,i-ci-ve:line,r-cr:hor20,o:hor50"
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
